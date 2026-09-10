@@ -20,11 +20,11 @@ export const projects = [
 ]
 
 export const certifications = [
-  { title: 'OOPs in Java', issuer: 'Simplilearn SkillUp', date: 'Dec 6, 2025 · ID 9539419', file: '/certificates/oops-in-java.pdf' },
-  { title: 'Advanced Network Operations 2.0', issuer: 'Internet Society Learning', date: 'Learning plan complete', file: '/certificates/advanced-network-operations.pdf' },
-  { title: 'Kubernetes and Cloud Native Essentials (LFS250)', issuer: 'The Linux Foundation', date: 'Jun 29, 2025 · ID LF-l9ucqnetjj', file: '/certificates/kubernetes-cloud-native-essentials.pdf' },
-  { title: 'Introduction to Java', issuer: 'Sololearn', date: 'Nov 17, 2025 · ID CC-U9JNOKLO', file: '/certificates/introduction-to-java.pdf' },
-  { title: 'Introduction to Network Operations', issuer: 'Internet Society Learning', date: 'Learning plan complete', file: '/certificates/introduction-to-network-operations.pdf' },
-  { title: 'Networking Basics', issuer: 'Cisco Networking Academy', date: 'Mar 25, 2025', file: '/certificates/networking-basics.jpeg' },
-  { title: 'CC Course Pre-assessment', issuer: 'ISC2', date: 'Issued Oct 15, 2026', file: '/certificates/isc2-cc-course-pre-assessment.jpeg' },
+  { title: 'OOPs in Java', issuer: 'Simplilearn SkillUp', date: 'Dec 6, 2025 · ID 9539419', file: '/certificates/oops-in-java.pdf', image: '/images/certificates/oops-in-java.jpg' },
+  { title: 'Advanced Network Operations 2.0', issuer: 'Internet Society Learning', date: 'Learning plan complete', file: '/certificates/advanced-network-operations.pdf', image: '/images/certificates/advanced-network-operations.jpg' },
+  { title: 'Kubernetes and Cloud Native Essentials (LFS250)', issuer: 'The Linux Foundation', date: 'Jun 29, 2025 · ID LF-l9ucqnetjj', file: '/certificates/kubernetes-cloud-native-essentials.pdf', image: '/images/certificates/kubernetes-cloud-native-essentials.jpg' },
+  { title: 'Introduction to Java', issuer: 'Sololearn', date: 'Nov 17, 2025 · ID CC-U9JNOKLO', file: '/certificates/introduction-to-java.pdf', image: '/images/certificates/introduction-to-java.jpg' },
+  { title: 'Introduction to Network Operations', issuer: 'Internet Society Learning', date: 'Learning plan complete', file: '/certificates/introduction-to-network-operations.pdf', image: '/images/certificates/introduction-to-network-operations.jpg' },
+  { title: 'Networking Basics', issuer: 'Cisco Networking Academy', date: 'Mar 25, 2025', file: '/certificates/networking-basics.jpeg', image: '/certificates/networking-basics.jpeg' },
+  { title: 'CC Course Pre-assessment', issuer: 'ISC2', date: 'Issued Oct 15, 2026', file: '/certificates/isc2-cc-course-pre-assessment.jpeg', image: '/certificates/isc2-cc-course-pre-assessment.jpeg' },
 ]
