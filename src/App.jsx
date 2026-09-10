@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
-import { ArrowDown, Award, Code2, ExternalLink, Github, GraduationCap, Linkedin, Mail, MapPin, Menu, Send, X } from 'lucide-react'
+import { ArrowDown, Award, Code2, Download, ExternalLink, Github, GraduationCap, Linkedin, Mail, MapPin, Menu, Send, X } from 'lucide-react'
 import SectionTitle from './components/SectionTitle'
 import ThemeToggle from './components/ThemeToggle'
 import ProjectCard from './components/ProjectCard'
@@ -19,10 +19,10 @@ export default function App() {
     <header className="fixed inset-x-0 top-0 z-50 border-b border-slate-200/70 bg-mist/85 backdrop-blur-md dark:border-slate-800 dark:bg-midnight/85">
       <div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-5 sm:px-8">
         <button onClick={() => go('Home')} className="font-display text-xl font-bold tracking-tight dark:text-white">Aime<span className="text-ocean dark:text-teal-400">.</span></button>
-        <nav className="hidden items-center gap-5 lg:flex">{nav.slice(1).map(item => <button key={item} onClick={() => go(item)} className="text-xs font-semibold text-slate-600 transition hover:text-ocean dark:text-slate-300 dark:hover:text-teal-300">{item}</button>)}</nav>
+        <nav className="hidden items-center gap-5 lg:flex">{nav.slice(1).map(item => <button key={item} onClick={() => go(item)} className="text-xs font-semibold text-slate-600 transition hover:text-ocean dark:text-slate-300 dark:hover:text-teal-300">{item}</button>)}<a href="/documents/Aime_Byiringiro_CV.pdf" target="_blank" rel="noreferrer" className="text-xs font-semibold text-slate-600 transition hover:text-ocean dark:text-slate-300 dark:hover:text-teal-300">CV</a></nav>
         <div className="flex items-center gap-3"><ThemeToggle isDark={dark} toggle={() => setDark(!dark)} /><button onClick={() => setMenuOpen(!menuOpen)} className="grid h-10 w-10 place-items-center rounded-full border border-slate-200 text-slate-700 lg:hidden dark:border-slate-700 dark:text-white">{menuOpen ? <X size={19}/> : <Menu size={20}/>}</button></div>
       </div>
-      <AnimatePresence>{menuOpen && <motion.div initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -8 }} className="border-t border-slate-200 bg-mist px-5 py-5 lg:hidden dark:border-slate-800 dark:bg-midnight">{nav.slice(1).map(item => <button key={item} onClick={() => go(item)} className="block w-full py-3 text-left text-sm font-semibold dark:text-white">{item}</button>)}</motion.div>}</AnimatePresence>
+      <AnimatePresence>{menuOpen && <motion.div initial={{ opacity: 0, y: -8 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 1, y: -8 }} className="border-t border-slate-200 bg-mist px-5 py-5 lg:hidden dark:border-slate-800 dark:bg-midnight">{nav.slice(1).map(item => <button key={item} onClick={() => go(item)} className="block w-full py-3 text-left text-sm font-semibold dark:text-white">{item}</button>)}<a href="/documents/Aime_Byiringiro_CV.pdf" target="_blank" rel="noreferrer" className="block w-full py-3 text-left text-sm font-semibold dark:text-white">View CV</a></motion.div>}</AnimatePresence>
     </header>
 
     <section id="home" className="grain relative isolate overflow-hidden bg-[#edf5f4] pt-24 dark:bg-[#121212]">
@@ -32,7 +32,7 @@ export default function App() {
           <p className="text-sm text-slate-500 dark:text-slate-400">Hi! I am</p><p className="mt-1 text-base font-semibold text-slate-700 dark:text-slate-200">Byiringiro Ingabire Aime</p>
           <h1 className="mt-4 max-w-3xl text-5xl font-extrabold leading-[1.02] tracking-tight text-ocean sm:text-6xl xl:text-7xl">Software Developer</h1>
           <p className="mt-6 max-w-xl text-base leading-7 text-slate-600 dark:text-slate-300">A Computer Science student crafting reliable web and backend solutions, while exploring AI, data, networking, and cloud computing.</p>
-          <div className="mt-8 flex flex-wrap gap-3"><button onClick={() => go('Contact')} className="inline-flex items-center gap-2 rounded-md bg-ocean px-6 py-3 text-sm font-bold text-white shadow-lg shadow-[#308280]/20 transition hover:bg-[#256a68]">Hire me <ArrowDown size={16}/></button><button onClick={() => go('Projects')} className="rounded-md border border-slate-300 px-6 py-3 text-sm font-bold text-slate-700 transition hover:border-ocean hover:text-ocean dark:border-slate-600 dark:text-slate-100">View projects</button></div>
+          <div className="mt-8 flex flex-wrap gap-3"><button onClick={() => go('Contact')} className="inline-flex items-center gap-2 rounded-md bg-ocean px-6 py-3 text-sm font-bold text-white shadow-lg shadow-[#308280]/20 transition hover:bg-[#256a68]">Hire me <ArrowDown size={16}/></button><a href="/documents/Aime_Byiringiro_CV.pdf" download className="inline-flex items-center gap-2 rounded-md border border-slate-300 px-6 py-3 text-sm font-bold text-slate-700 transition hover:border-ocean hover:text-ocean dark:border-slate-600 dark:text-slate-100">Download CV <Download size={16}/></a><button onClick={() => go('Projects')} className="rounded-md border border-slate-300 px-6 py-3 text-sm font-bold text-slate-700 transition hover:border-ocean hover:text-ocean dark:border-slate-600 dark:text-slate-100">View projects</button></div>
           <div className="mt-10 grid max-w-md grid-cols-3 divide-x divide-slate-300 rounded-md bg-white/80 px-3 py-4 shadow-sm dark:divide-slate-700 dark:bg-white/5"><MiniStat value="6+" label="Projects"/><MiniStat value="2027" label="Graduation"/><MiniStat value="7" label="Skill areas"/></div>
         </motion.div>
         <motion.div initial={{ opacity: 0, scale: .96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .7, delay: .1 }} className="relative mx-auto w-full max-w-md">
