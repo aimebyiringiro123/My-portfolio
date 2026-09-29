@@ -36,7 +36,7 @@ export default function App() {
           <div className="mt-10 grid max-w-md grid-cols-3 divide-x divide-slate-300 rounded-md bg-white/80 px-3 py-4 shadow-sm dark:divide-slate-700 dark:bg-white/5"><MiniStat value="6+" label="Projects"/><MiniStat value="2027" label="Graduation"/><MiniStat value="7" label="Skill areas"/></div>
         </motion.div>
         <motion.div initial={{ opacity: 0, scale: .96 }} animate={{ opacity: 1, scale: 1 }} transition={{ duration: .7, delay: .1 }} className="relative mx-auto w-full max-w-md">
-          <div className="absolute inset-3 rounded-full bg-[#308280]/10 dark:bg-white/5"/><div className="relative aspect-[4/5] overflow-hidden rounded-b-[10rem] rounded-t-[10rem] bg-slate-200 shadow-2xl shadow-slate-900/20"><img src="/images/aime-portrait.jpeg" alt="Byiringiro Ingabire Aime in a suit" className="h-full w-full object-cover object-top"/></div>
+          <div className="absolute inset-3 rounded-full bg-[#308280]/10 dark:bg-white/5"/><div className="relative aspect-[4/5] overflow-hidden rounded-b-[10rem] rounded-t-[10rem] bg-slate-200 shadow-2xl shadow-slate-900/20"><img src="/images/passport photo Aime.png" alt="Byiringiro Ingabire Aime passport photo" className="h-full w-full object-cover object-top"/></div>
           <div className="absolute -bottom-3 -left-3 rounded-md border border-white/70 bg-white/90 px-4 py-3 shadow-lg backdrop-blur dark:border-slate-700 dark:bg-slate-900/90"><p className="font-mono text-[10px] uppercase tracking-wider text-ocean">Currently studying</p><p className="mt-1 text-sm font-bold dark:text-white">Information Technology @ AUCA</p></div>
         </motion.div>
       </div>

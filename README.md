@@ -78,4 +78,8 @@ The generated static site is written to `dist/` and can be deployed to a static 
 
 - GitHub: [@aimebyiringiro123](https://github.com/aimebyiringiro123)
 - LinkedIn: [Byiringiro Ingabire Aime](https://www.linkedin.com/in/byiringiro-ingabire-aime-9a589a2b3/)
+<<<<<<< HEAD
 - Email: [aimebyiringiro123@gmail.com](mailto:aimebyiringiro123@gmail.com)
+=======
+- Email: [aimebyiringiro123@gmail.com](mailto:aimebyiringiro123@gmail.com)
+>>>>>>> fd3dcfa (Update portfolio hero image)
